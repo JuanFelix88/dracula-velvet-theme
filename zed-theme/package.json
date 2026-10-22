@@ -1,0 +1,18 @@
+{
+  "name": "dracula-velvet-theme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dracula Velvet for Zed, based on pnex's custom Dracula palette.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "install-theme": "node scripts/install.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1"
+  }
+}
