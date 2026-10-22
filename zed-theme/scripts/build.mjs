@@ -120,8 +120,8 @@ const token = (color, extra = {}) => ({ color, ...extra });
 style.syntax = {
   attribute: token(p.green),
   boolean: token(p.blue),
-  comment: token(p.brightBlack, { font_style: 'italic' }),
-  'comment.doc': token(p.brightBlack, { font_style: 'italic' }),
+  comment: token(p.brightBlack, { font_style: 'normal', font_weight: 400 }),
+  'comment.doc': token(p.brightBlack, { font_style: 'normal', font_weight: 400 }),
   constant: token(p.blue),
   constructor: token(p.cyan),
   embedded: token(p.foreground),

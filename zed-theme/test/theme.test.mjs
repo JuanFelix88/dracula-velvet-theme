@@ -27,6 +27,14 @@ test('tema válido segundo o schema oficial do Zed', () => {
   }
 });
 
+test('comentários comuns e de documentação sem itálico ou negrito', () => {
+  for (const capture of ['comment', 'comment.doc']) {
+    assert.equal(style.syntax[capture].font_style, 'normal');
+    assert.equal(style.syntax[capture].font_weight, 400);
+    assert.equal(style.syntax[capture].color, palette.brightBlack);
+  }
+});
+
 test('todas as cores vêm da paleta do pnex, com alfa opcional', () => {
   const colors = new Set(Object.values(palette).filter(c => c.startsWith('#')).map(c => c.toLowerCase()));
   function check(value) {
