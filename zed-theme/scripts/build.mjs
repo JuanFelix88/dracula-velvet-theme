@@ -160,6 +160,7 @@ style.syntax = {
   type: token(p.cyan),
   'type.builtin': token(p.cyan),
   variable: token(p.foreground),
+  'variable.parameter': token(p.orange),
   'variable.special': token(p.blue),
   variant: token(p.blue),
 };

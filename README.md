@@ -2,6 +2,8 @@
 
 A darker Dracula palette with soft pink and muted red, originally made for pnex.
 
+Parameters use Dracula's standard orange [`#FFB86C`](https://draculatheme.com/spec); comments stay upright and regular-weight. Parameter references depend on the language's highlighting support.
+
 ## Zed
 
 Download [`dracula-velvet.json`](zed-theme/themes/dracula-velvet.json) and place it in:

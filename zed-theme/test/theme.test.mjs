@@ -35,7 +35,13 @@ test('comentários comuns e de documentação sem itálico ou negrito', () => {
   }
 });
 
-test('todas as cores vêm da paleta do pnex, com alfa opcional', () => {
+test('parâmetros usam o laranja Dracula sem alterar variáveis comuns', () => {
+  assert.equal(palette.orange, '#FFB86C');
+  assert.equal(style.syntax['variable.parameter'].color, palette.orange);
+  assert.equal(style.syntax.variable.color, palette.foreground);
+});
+
+test('todas as cores vêm da paleta do tema, com alfa opcional', () => {
   const colors = new Set(Object.values(palette).filter(c => c.startsWith('#')).map(c => c.toLowerCase()));
   function check(value) {
     if (typeof value === 'string' && value.startsWith('#')) {

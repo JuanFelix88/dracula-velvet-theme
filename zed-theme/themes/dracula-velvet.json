@@ -317,6 +317,9 @@
           "variable": {
             "color": "#f8f8f2"
           },
+          "variable.parameter": {
+            "color": "#FFB86C"
+          },
           "variable.special": {
             "color": "#bd93f9"
           },
